@@ -1,0 +1,45 @@
+titleNode
+ root
+ pattern \.title$
+ extensions title
+ inScope abstractFactNode
+ cells fileNameCell
+keywordCell
+anyCell
+bitCell
+fileNameCell
+ highlightScope string
+intCell
+abstractFactNode
+ abstract
+ cells keywordCell anyCell
+tconstNode
+ crux tconst
+ extends abstractFactNode
+titleTypeNode
+ crux titleType
+ extends abstractFactNode
+primaryTitleNode
+ crux primaryTitle
+ extends abstractFactNode
+ catchAllCellType anyCell
+originalTitleNode
+ crux originalTitle
+ extends abstractFactNode
+ catchAllCellType anyCell
+isAdultNode
+ crux isAdult
+ cells keywordCell bitCell
+ extends abstractFactNode
+startYearNode
+ crux startYear
+ cells keywordCell intCell
+ extends abstractFactNode
+runtimeMinutesNode
+ crux runtimeMinutes
+ cells keywordCell intCell
+ extends abstractFactNode
+genresNode
+ crux genres
+ cells keywordCell anyCell
+ extends abstractFactNode
